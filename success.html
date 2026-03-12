@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Successful - OUTTHENET V2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 24px;
+        }
+        .success-card {
+            max-width: 560px;
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 120, 255, 0.2);
+            border-radius: 20px;
+            padding: 48px 40px;
+        }
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 230, 118, 0.15);
+            border: 2px solid #00e676;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin: 0 auto 24px;
+        }
+        .success-card h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .success-card .subtitle {
+            color: var(--gray);
+            font-size: 15px;
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .next-steps {
+            text-align: left;
+            margin-bottom: 36px;
+        }
+        .next-steps h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--blue-light);
+        }
+        .next-step {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .next-step-num {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .next-step-content h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .next-step-content p {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+        .next-step-content code {
+            background: rgba(0, 120, 255, 0.15);
+            color: var(--blue-light);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .success-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" style="text-decoration:none;color:inherit;">OUTTHENET <span class="v2">V2</span></a>
+        </div>
+    </nav>
+
+    <section class="success-page">
+        <div class="success-card">
+            <div class="success-icon">&#10003;</div>
+            <h1>Payment Successful!</h1>
+            <p class="subtitle">Thank you for purchasing OUTTHENET V2. Follow the steps below to get set up and start greening.</p>
+
+            <div class="next-steps">
+                <h2>Next Steps</h2>
+                <div class="next-step">
+                    <div class="next-step-num">1</div>
+                    <div class="next-step-content">
+                        <h3>Join Our Discord</h3>
+                        <p>Join the OUTTHENET Discord server to get your script file and activation code.</p>
+                    </div>
+                </div>
+                <div class="next-step">
+                    <div class="next-step-num">2</div>
+                    <div class="next-step-content">
+                        <h3>Get Your Activation Code</h3>
+                        <p>Once you have the VIP role, type <code>!zencode</code> in any channel. The bot will DM you your unique 6-button activation code.</p>
+                    </div>
+                </div>
+                <div class="next-step">
+                    <div class="next-step-num">3</div>
+                    <div class="next-step-content">
+                        <h3>Flash the Script</h3>
+                        <p>Open the .gpc file in Zen Studio, compile (F5), and flash (Ctrl+F5) to your Cronus Zen device.</p>
+                    </div>
+                </div>
+                <div class="next-step">
+                    <div class="next-step-num">4</div>
+                    <div class="next-step-content">
+                        <h3>Enter Your Code</h3>
+                        <p>On first boot, the OLED shows "ENTER CODE". Use D-pad UP/DOWN to cycle values, LEFT/RIGHT to move positions, and X/A to confirm.</p>
+                    </div>
+                </div>
+                <div class="next-step">
+                    <div class="next-step-num">5</div>
+                    <div class="next-step-content">
+                        <h3>Start Greening</h3>
+                        <p>Open the menu with LT + Menu, dial in your settings using the PDF guide, and drop nothing but greens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-buttons">
+                <a href="https://discord.gg/yZKKEfKaQA" target="_blank" class="btn btn-primary">Join Discord</a>
+                <a href="index.html" class="btn btn-outline">Back to Home</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
