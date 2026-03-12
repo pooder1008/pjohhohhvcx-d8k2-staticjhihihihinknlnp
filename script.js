@@ -1,5 +1,5 @@
 // Stripe Payment Link - redirects directly to Stripe Checkout
-const STRIPE_PAYMENT_URL = 'https://buy.stripe.com/test_14AaEZ50G2Jz7rf6ARcs800';
+const STRIPE_PAYMENT_URL = 'https://buy.stripe.com/9B63cof5O8OObmF2hSfEk00';
 
 // FAQ toggle
 function toggleFaq(item) {
