@@ -1,5 +1,6 @@
-// Stripe Payment Link - redirects directly to Stripe Checkout
+// Stripe Payment Links - redirect directly to Stripe Checkout
 const STRIPE_PAYMENT_URL = 'https://buy.stripe.com/9B63cof5O8OObmF2hSfEk00';
+const STRIPE_APEX_PAYMENT_URL = 'https://buy.stripe.com/fZu5kw2j20iieyR4q0fEk01';
 
 // FAQ toggle
 function toggleFaq(item) {
@@ -30,6 +31,14 @@ function handleBuy() {
     btn.textContent = 'Redirecting to Stripe...';
     btn.disabled = true;
     window.location.href = STRIPE_PAYMENT_URL;
+}
+
+// Handle Buy button click - redirect to Stripe Payment Link (OTN APEX V1)
+function handleBuyApex() {
+    const btn = document.getElementById('buyButtonApex');
+    btn.textContent = 'Redirecting to Stripe...';
+    btn.disabled = true;
+    window.location.href = STRIPE_APEX_PAYMENT_URL;
 }
 
 // Smooth navbar background on scroll
