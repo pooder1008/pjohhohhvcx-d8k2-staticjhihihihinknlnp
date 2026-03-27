@@ -41,6 +41,7 @@ body {
 
 .blue { color: var(--blue); }
 .v2 { color: var(--blue); }
+.cyan { color: #00e5ff; }
 
 /* === NAVBAR === */
 .navbar {
@@ -99,6 +100,22 @@ body {
 
 .nav-discord:hover {
     background: var(--blue-light) !important;
+}
+
+.nav-product-link {
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-active {
+    color: var(--white) !important;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 2px;
+}
+
+/* APEX page nav-active uses cyan */
+body.apex-page .nav-active {
+    border-bottom-color: #00e5ff;
 }
 
 .mobile-menu-btn {
@@ -242,6 +259,36 @@ body {
     color: var(--gray-mid);
 }
 
+/* === APEX CYAN THEME === */
+.hero-glow-cyan {
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.25) 0%, transparent 60%);
+}
+
+.stat-cyan {
+    color: #00e5ff;
+}
+
+.btn-cyan {
+    background: #00e5ff;
+    color: #0a0a0f;
+    box-shadow: 0 4px 20px rgba(0, 229, 255, 0.3);
+}
+
+.btn-cyan:hover {
+    background: #46e5ff;
+    box-shadow: 0 4px 30px rgba(0, 229, 255, 0.5);
+    transform: translateY(-1px);
+    color: #0a0a0f;
+}
+
+.price-cyan {
+    color: #00e5ff;
+}
+
+.faq-arrow-cyan {
+    color: #00e5ff;
+}
+
 /* === BUTTONS === */
 .btn {
     display: inline-block;
@@ -326,6 +373,11 @@ body {
     box-shadow: 0 8px 30px rgba(0, 120, 255, 0.1);
 }
 
+.feature-card-apex:hover {
+    border-color: rgba(0, 229, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 229, 255, 0.1);
+}
+
 .feature-icon {
     font-size: 32px;
     margin-bottom: 16px;
@@ -369,6 +421,18 @@ body {
     right: 0;
     height: 3px;
     background: linear-gradient(90deg, var(--blue), var(--blue-light), var(--blue));
+}
+
+.pricing-card-apex {
+    border-color: rgba(0, 229, 255, 0.2);
+}
+
+.pricing-card-apex::before {
+    background: linear-gradient(90deg, #00b8d4, #00e5ff, #00b8d4);
+}
+
+.pricing-card-apex .pricing-features li::before {
+    color: #00e5ff;
 }
 
 .pricing-badge {
@@ -478,6 +542,10 @@ body {
     transform: translateY(-4px);
 }
 
+.step-apex:hover {
+    border-color: rgba(0, 229, 255, 0.2);
+}
+
 .step-number {
     width: 48px;
     height: 48px;
@@ -489,6 +557,11 @@ body {
     font-size: 20px;
     font-weight: 800;
     margin: 0 auto 16px;
+}
+
+.step-number.step-number-cyan {
+    background: #00e5ff;
+    color: #0a0a0f;
 }
 
 .step h3 {
