@@ -111,43 +111,82 @@
         <div class="success-card">
             <div class="success-icon">&#10003;</div>
             <h1>Payment Successful!</h1>
-            <p class="subtitle">Thank you for purchasing OUTTHENET V2.8. Follow the steps below to get set up and start greening.</p>
 
-            <div class="next-steps">
-                <h2>Next Steps</h2>
-                <div class="next-step">
-                    <div class="next-step-num">1</div>
-                    <div class="next-step-content">
-                        <h3>Join Our Discord</h3>
-                        <p>Join the OUTTHENET Discord server to get your script file and activation code.</p>
+            <!-- Auto-delivery flow (shown when ?flow=auto) -->
+            <div id="autoDeliverySteps" style="display:none;">
+                <p class="subtitle">Thank you for purchasing OUTTHENET V2.8. The bot is delivering your script, setup guide, and activation code to your Discord DMs right now.</p>
+                <div class="next-steps">
+                    <h2>Next Steps</h2>
+                    <div class="next-step">
+                        <div class="next-step-num">1</div>
+                        <div class="next-step-content">
+                            <h3>Check Your Discord DMs</h3>
+                            <p>The bot just sent you the .gpc script file, setup guide PDF, and your unique 6-button activation code via DM. Make sure your DMs are open.</p>
+                        </div>
+                    </div>
+                    <div class="next-step">
+                        <div class="next-step-num">2</div>
+                        <div class="next-step-content">
+                            <h3>Flash the Script</h3>
+                            <p>Open the .gpc file in Zen Studio, compile (F5), and flash (Ctrl+F5) to your Cronus Zen device.</p>
+                        </div>
+                    </div>
+                    <div class="next-step">
+                        <div class="next-step-num">3</div>
+                        <div class="next-step-content">
+                            <h3>Enter Your Code</h3>
+                            <p>On first boot, the OLED shows "ENTER CODE". Use D-pad UP/DOWN to cycle values, LEFT/RIGHT to move positions, and X/A to confirm.</p>
+                        </div>
+                    </div>
+                    <div class="next-step">
+                        <div class="next-step-num">4</div>
+                        <div class="next-step-content">
+                            <h3>Calibrate & Green</h3>
+                            <p>Use KILLSHOT to calibrate your timing, enable Button Tempo AI+, and drop nothing but greens. Check the setup guide for all 24 menu pages.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="next-step">
-                    <div class="next-step-num">2</div>
-                    <div class="next-step-content">
-                        <h3>Get Your Activation Code</h3>
-                        <p>Once you have the VIP role, type <code>!zencode</code> in any channel. The bot will DM you your unique 6-button activation code.</p>
+            </div>
+
+            <!-- Manual flow (shown by default / direct Stripe purchases) -->
+            <div id="manualSteps">
+                <p class="subtitle">Thank you for purchasing OUTTHENET V2.8. Follow the steps below to get set up and start greening.</p>
+                <div class="next-steps">
+                    <h2>Next Steps</h2>
+                    <div class="next-step">
+                        <div class="next-step-num">1</div>
+                        <div class="next-step-content">
+                            <h3>Join Our Discord</h3>
+                            <p>Join the OUTTHENET Discord server to get your script file and activation code.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="next-step">
-                    <div class="next-step-num">3</div>
-                    <div class="next-step-content">
-                        <h3>Flash the Script</h3>
-                        <p>Open the .gpc file in Zen Studio, compile (F5), and flash (Ctrl+F5) to your Cronus Zen device.</p>
+                    <div class="next-step">
+                        <div class="next-step-num">2</div>
+                        <div class="next-step-content">
+                            <h3>Get Your Activation Code</h3>
+                            <p>Once you have the VIP role, type <code>!zencode</code> in any channel. The bot will DM you your unique 6-button activation code.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="next-step">
-                    <div class="next-step-num">4</div>
-                    <div class="next-step-content">
-                        <h3>Enter Your Code</h3>
-                        <p>On first boot, the OLED shows "ENTER CODE". Use D-pad UP/DOWN to cycle values, LEFT/RIGHT to move positions, and X/A to confirm.</p>
+                    <div class="next-step">
+                        <div class="next-step-num">3</div>
+                        <div class="next-step-content">
+                            <h3>Flash the Script</h3>
+                            <p>Open the .gpc file in Zen Studio, compile (F5), and flash (Ctrl+F5) to your Cronus Zen device.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="next-step">
-                    <div class="next-step-num">5</div>
-                    <div class="next-step-content">
-                        <h3>Calibrate & Green</h3>
-                        <p>Use KILLSHOT to calibrate your timing, enable Button Tempo AI+, and drop nothing but greens. Check the setup guide for all 24 menu pages.</p>
+                    <div class="next-step">
+                        <div class="next-step-num">4</div>
+                        <div class="next-step-content">
+                            <h3>Enter Your Code</h3>
+                            <p>On first boot, the OLED shows "ENTER CODE". Use D-pad UP/DOWN to cycle values, LEFT/RIGHT to move positions, and X/A to confirm.</p>
+                        </div>
+                    </div>
+                    <div class="next-step">
+                        <div class="next-step-num">5</div>
+                        <div class="next-step-content">
+                            <h3>Calibrate & Green</h3>
+                            <p>Use KILLSHOT to calibrate your timing, enable Button Tempo AI+, and drop nothing but greens. Check the setup guide for all 24 menu pages.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,6 +195,14 @@
                 <a href="https://discord.gg/yZKKEfKaQA" target="_blank" class="btn btn-primary">Join Discord</a>
                 <a href="index.html" class="btn btn-outline">Back to Home</a>
             </div>
+
+            <script>
+                // Show auto-delivery steps if redirected from the bot flow
+                if (new URLSearchParams(window.location.search).get('flow') === 'auto') {
+                    document.getElementById('autoDeliverySteps').style.display = '';
+                    document.getElementById('manualSteps').style.display = 'none';
+                }
+            </script>
         </div>
     </section>
 </body>
