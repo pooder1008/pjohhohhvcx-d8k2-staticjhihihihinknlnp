@@ -21,6 +21,7 @@
                 <a href="#pricing">Pricing</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#faq">FAQ</a>
+                <a href="#changelog">V2.9 Update</a>
                 <a href="https://discord.gg/yZKKEfKaQA" target="_blank" class="nav-discord">Discord</a>
             </div>
             <button class="mobile-menu-btn" onclick="toggleMobile()">
@@ -34,6 +35,7 @@
             <a href="#pricing" onclick="toggleMobile()">Pricing</a>
             <a href="#how-it-works" onclick="toggleMobile()">How It Works</a>
             <a href="#faq" onclick="toggleMobile()">FAQ</a>
+            <a href="#changelog" onclick="toggleMobile()">V2.9 Update</a>
             <a href="https://discord.gg/yZKKEfKaQA" target="_blank">Discord</a>
         </div>
     </nav>
@@ -249,6 +251,113 @@
                     </div>
                     <div class="faq-answer">
                         <p>A full PDF setup guide is included with your purchase covering installation, activation, menu navigation, recommended settings, and troubleshooting. You can also get help in our Discord server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- V2.9 Changelog -->
+    <section class="changelog" id="changelog">
+        <div class="container">
+            <h2 class="section-title">What's New in <span class="blue">V2.9</span></h2>
+            <p class="section-subtitle">Every change from V2.8 to V2.9 -- plus how to use the new features.</p>
+
+            <div class="changelog-grid">
+                <div class="changelog-column">
+                    <h3 class="changelog-heading">New Features</h3>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-new">NEW</div>
+                        <h4>8 Build Slots</h4>
+                        <p>Expanded from 6 to 8 slots. Save more player builds and switch between them mid-game with L1+R1+D-Pad.</p>
+                        <div class="changelog-how">How to use: Open the menu (L2+Options), navigate to the Build page, and select a slot 1-8. Quick switch during gameplay with L1+R1+D-Pad Up/Down/Left/Right.</div>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-new">NEW</div>
+                        <h4>Hesi Flick Dribble</h4>
+                        <p>New 7th dribble move that forces a speed boost off the hesitation. Available as the 5th option in Custom dribble mode.</p>
+                        <div class="changelog-how">How to use: Open the menu, go to Dribble Mode, set to Custom. Assign Hesi Flick to any D-Pad direction. Hold that direction during gameplay to trigger.</div>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-new">NEW</div>
+                        <h4>Adaptive Tempo</h4>
+                        <p>The script learns your shot rhythm during live gameplay. Each shot blends into your tempo using a weighted average (80% existing + 20% new shot). Standstill and fade timings tracked separately.</p>
+                        <div class="changelog-how">How to use: Open the menu, go to Adaptive Tempo page, toggle ON. Calibrate with KILLSHOT first to set your baseline, then Adaptive Tempo fine-tunes as you play.</div>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-new">NEW</div>
+                        <h4>Defense AI+ Enhanced</h4>
+                        <p>Now includes lateral slide boost when holding L2 for faster defensive movement, plus RS amplification on L2+R2 for better contests and steals.</p>
+                        <div class="changelog-how">How to use: Enable Defense AI+ in the menu. Hold L2 on defense for lateral slide boost. Hold L2+R2 together for RS amplification on contests.</div>
+                    </div>
+                </div>
+
+                <div class="changelog-column">
+                    <h3 class="changelog-heading">Fixes & Improvements</h3>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">FIXED</div>
+                        <h4>Zero Randomization</h4>
+                        <p>All random variation completely removed. Every RS input is now exact fixed values. No jitter, no random rushes, no random slows. Identical every shot.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">FIXED</div>
+                        <h4>Stability Lock</h4>
+                        <p>Removed from the menu and auto-locked to the tightest possible setting. No more inconsistency even with great timing.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">IMPROVED</div>
+                        <h4>Force Plant</h4>
+                        <p>Now works on ALL shots (standstill, moving, fades), not just sprint shots. Zeros the left stick the exact frame the shot starts.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">IMPROVED</div>
+                        <h4>KILLSHOT Calibration</h4>
+                        <p>Now drops the highest and lowest outlier shots and averages the middle 3 for a more accurate tempo MS reading.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">FIXED</div>
+                        <h4>Burst Stamina</h4>
+                        <p>Now properly cycles: burst speed, slow down, cooldown recovery, burst again. No more getting stuck in one state.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">FIXED</div>
+                        <h4>Instant Quickstop</h4>
+                        <p>No longer interferes with Button Tempo. Works regardless of whether tempo is ON or OFF.</p>
+                        <div class="changelog-how">How to use: R2+Square (or L2+Square depending on your setting) to quickstop. Works independently of all other features.</div>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">FIXED</div>
+                        <h4>Turbo Fades</h4>
+                        <p>Fade state is now latched at shot start. No more stepbacks when turbo fading -- fades come out clean every time.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">IMPROVED</div>
+                        <h4>Better Fade Detection</h4>
+                        <p>Corner fades, post fades, and turnarounds all detect correctly. No more getting stepbacks when you want a fade.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">IMPROVED</div>
+                        <h4>Combo Overlap Fix</h4>
+                        <p>All dribble combos automatically stop the moment a shot begins. No more RS conflicts between dribbles and shots.</p>
+                    </div>
+
+                    <div class="changelog-item">
+                        <div class="changelog-badge badge-fix">IMPROVED</div>
+                        <h4>Infinite Stamina</h4>
+                        <p>Drains slower with a higher stamina floor and longer ramp times for more sustained speed.</p>
                     </div>
                 </div>
             </div>

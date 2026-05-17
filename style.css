@@ -757,4 +757,89 @@ body.apex-page .nav-active {
     .section-title {
         font-size: 28px;
     }
+
+    .changelog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === CHANGELOG === */
+.changelog {
+    padding: 80px 0;
+    background: var(--bg);
+}
+
+.changelog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.changelog-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue-light);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(0, 120, 255, 0.2);
+}
+
+.changelog-item {
+    background: var(--bg-card);
+    border: 1px solid var(--gray-dark);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+}
+
+.changelog-item:hover {
+    border-color: rgba(0, 120, 255, 0.3);
+}
+
+.changelog-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.changelog-item p {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.changelog-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.badge-new {
+    background: rgba(0, 120, 255, 0.15);
+    color: var(--blue-light);
+    border: 1px solid rgba(0, 120, 255, 0.3);
+}
+
+.badge-fix {
+    background: rgba(0, 230, 118, 0.1);
+    color: var(--green);
+    border: 1px solid rgba(0, 230, 118, 0.25);
+}
+
+.changelog-how {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(0, 120, 255, 0.06);
+    border-left: 3px solid var(--blue);
+    border-radius: 0 8px 8px 0;
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
 }
