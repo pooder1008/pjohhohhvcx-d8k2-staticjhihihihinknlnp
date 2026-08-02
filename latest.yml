@@ -1,8 +1,8 @@
 version: 0.3.7
 files:
 - url: https://github.com/pooder1008/OutthenetVision/releases/download/v0.3.7/OutthenetVision-Setup-0.3.7.exe
-  sha512: m/dRpdAL1HhmkvJLwJGwGflJeXDA1f8hUx0UpbNZSOY5v4GHVedCFXzBYPe4lODCDIhOn/p/zE6Nn8yAwzGV3w==
-  size: 108452079
+  sha512: +Bb95jw3tIhU9mubD+htm186RjtZMSVu0bnuz6Tmftl/8CoU1VS+cJrf3DY+/zsoXpb1WfFkApWmRb0my9Q+PA==
+  size: 108451427
 path: OutthenetVision-Setup-0.3.7.exe
-sha512: m/dRpdAL1HhmkvJLwJGwGflJeXDA1f8hUx0UpbNZSOY5v4GHVedCFXzBYPe4lODCDIhOn/p/zE6Nn8yAwzGV3w==
-releaseDate: '2026-08-02T19:34:17.158Z'
+sha512: +Bb95jw3tIhU9mubD+htm186RjtZMSVu0bnuz6Tmftl/8CoU1VS+cJrf3DY+/zsoXpb1WfFkApWmRb0my9Q+PA==
+releaseDate: '2026-08-02T19:54:22.189Z'
