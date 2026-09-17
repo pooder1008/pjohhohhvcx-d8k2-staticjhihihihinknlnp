@@ -1,8 +1,8 @@
-version: 0.5.0
+version: 0.5.1
 files:
-- url: https://github.com/pooder1008/pjohhohhvcx-d8k2-staticjhihihihinknlnp/releases/download/v0.5.0/OutthenetVision-Setup-0.5.0.exe
-  sha512: mtvPswFoq+UnANOBDX+308hkq3rPQ7Vx66bhoSF0t0cRtrXYPvzHACT2ysKHT1TkyTkklIS60qkfItvjEgWaJw==
-  size: 138580637
-path: OutthenetVision-Setup-0.5.0.exe
-sha512: mtvPswFoq+UnANOBDX+308hkq3rPQ7Vx66bhoSF0t0cRtrXYPvzHACT2ysKHT1TkyTkklIS60qkfItvjEgWaJw==
-releaseDate: '2026-09-17T20:25:00.000Z'
+- url: https://github.com/pooder1008/pjohhohhvcx-d8k2-staticjhihihihinknlnp/releases/download/v0.5.1/OutthenetVision-Setup-0.5.1.exe
+  sha512: dER9xGTa2eE0GO25P3BrqnHvx1reW2VLHE7PZHsrVIcL15fL11sVmwICcamCPIkERlsriUOER4n9HRMkJl3bsA==
+  size: 138853332
+path: OutthenetVision-Setup-0.5.1.exe
+sha512: dER9xGTa2eE0GO25P3BrqnHvx1reW2VLHE7PZHsrVIcL15fL11sVmwICcamCPIkERlsriUOER4n9HRMkJl3bsA==
+releaseDate: '2026-09-17T21:03:22.800Z'
